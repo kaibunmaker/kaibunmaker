@@ -1,4 +1,5 @@
 {
   "APP_NAME": "回文メーカー",
-  "APP_DESCRIPTION": "回文を作成して共有できるサイト"
+  "APP_DESCRIPTION": "回文を作成して共有できるサイト",
+  "TWEET": "ツイート"
 }
