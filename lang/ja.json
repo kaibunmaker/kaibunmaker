@@ -2,5 +2,6 @@
   "APP_NAME": "回文メーカー",
   "APP_DESCRIPTION": "回文を作成して共有できるサイト",
   "INPUT": "入力",
+  "REPEAT_LAST_CHARACTER": "最後の文字を繰り返す",
   "TWEET": "ツイート"
 }
