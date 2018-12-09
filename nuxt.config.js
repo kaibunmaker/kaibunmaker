@@ -69,5 +69,9 @@ module.exports = {
         }))
       }
     }
+  },
+
+  router: {
+    base: process.env.BASE_DIR || '/'
   }
 }
