@@ -1,9 +1,30 @@
 <template>
-  <v-app>
+  <v-app id="app">
     <v-content>
-      <v-container>
+      <v-container
+        grid-list-xl
+        text-xs-center>
         <nuxt />
       </v-container>
     </v-content>
+    <app-footer />
   </v-app>
 </template>
+
+<script>
+import AppFooter from '~/components/AppFooter'
+
+export default {
+  components: {
+    AppFooter
+  }
+}
+</script>
+
+<style lang="scss">
+#app {
+  background-color: #fafafa;
+  color: #212121;
+  font-family: "Noto Sans JP", sans-serif;
+}
+</style>
