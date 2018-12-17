@@ -1,10 +1,10 @@
 {
   "APP_NAME": "回文メーカー",
   "APP_DESCRIPTION": "回文を作成して共有できるサイト",
-  "FOOTER_CREATOR": "Created by {0}",
+  "FOOTER_CREATOR": "Created by {creator}",
   "FOOTER_CREATOR_URL": "https://twitter.com/munieru_jp",
   "FOOTER_CREATOR_LABEL": "@munieru_jp",
-  "FOOTER_HOSTING_SITE": "Hosted on {0}",
+  "FOOTER_HOSTING_SITE": "Hosted on {site}",
   "FOOTER_HOSTING_SITE_URL": "https://github.com/munierujp/kaibunmaker",
   "FOOTER_HOSTING_SITE_LABEL": "GitHub",
   "INPUT": "入力",

@@ -9,7 +9,8 @@
         path="FOOTER_CREATOR">
         <a
           :href="$t('FOOTER_CREATOR_URL')"
-          target="_blank">{{ $t('FOOTER_CREATOR_LABEL') }}</a>
+          target="_blank"
+          place="creator">{{ $t('FOOTER_CREATOR_LABEL') }}</a>
       </i18n>
       <span>-</span>
       <i18n
@@ -17,7 +18,8 @@
         path="FOOTER_HOSTING_SITE">
         <a
           :href="$t('FOOTER_HOSTING_SITE_URL')"
-          target="_blank">{{ $t('FOOTER_HOSTING_SITE_LABEL') }}</a>
+          target="_blank"
+          place="site">{{ $t('FOOTER_HOSTING_SITE_LABEL') }}</a>
       </i18n>
     </div>
     <v-spacer />
