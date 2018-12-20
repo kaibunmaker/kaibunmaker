@@ -3,9 +3,9 @@ const Stylelint = require('stylelint-webpack-plugin')
 const config = require('./config')
 const ORIGIN = config.ORIGIN
 const BASE_DIR = config.BASE_DIR
-const BASE_URL = new URL(BASE_DIR, ORIGIN)
+const BASE_URL = new URL(BASE_DIR, ORIGIN).toString()
 const OG_IMAGE_PATH = config.OG_IMAGE_PATH
-const OG_IMAGE_URL = new URL(OG_IMAGE_PATH, BASE_URL)
+const OG_IMAGE_URL = new URL(OG_IMAGE_PATH, BASE_URL).toString()
 const TWITTER_ID = config.TWITTER_ID
 const GOOGLE_ANALYTICS_UA = config.GOOGLE_ANALYTICS_UA
 

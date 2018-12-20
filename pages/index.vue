@@ -33,7 +33,7 @@ import AppTweetButton from '~/components/AppTweetButton'
 import config from '~/config'
 const ORIGIN = config.ORIGIN
 const BASE_DIR = config.BASE_DIR
-const BASE_URL = new URL(BASE_DIR, ORIGIN)
+const BASE_URL = new URL(BASE_DIR, ORIGIN).toString()
 
 export default {
   head () {
@@ -69,6 +69,7 @@ export default {
         .filter(palindrome => palindrome !== '')
         .map(palindrome => encodeURIComponent(palindrome))
         .map(palindrome => new URL(`?status=${palindrome}`, BASE_URL))
+        .map(url => url.toString())
         .or(BASE_URL)
     },
     shareMessageTemplate () {
