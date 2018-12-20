@@ -1,6 +1,18 @@
+const path = require('path')
+const Stylelint = require('stylelint-webpack-plugin')
+
+const config = require('./config')
+const ORIGIN = config.ORIGIN
+const BASE_DIR = config.BASE_DIR
+const BASE_URL = path.join(ORIGIN, BASE_DIR)
+const OG_IMAGE_PATH = config.OG_IMAGE_PATH
+const OG_IMAGE_URL = path.join(BASE_URL, OG_IMAGE_PATH)
+const TWITTER_ID = config.TWITTER_ID
+
 const i18n = require('./nuxt-i18n.config')
 const lang = require(`./${i18n.langDir}${i18n.defaultLocale}`)
-const Stylelint = require('stylelint-webpack-plugin')
+const APP_NAME = lang.APP_NAME
+const APP_DESCRIPTION = lang.APP_DESCRIPTION
 
 module.exports = {
   mode: 'spa',
@@ -9,11 +21,20 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: lang.APP_NAME,
+    title: APP_NAME,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: lang.APP_DESCRIPTION }
+      { hid: 'description', name: 'description', content: APP_DESCRIPTION },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:title', property: 'og:title', content: APP_NAME },
+      { hid: 'og:description', property: 'og:description', content: APP_DESCRIPTION },
+      { hid: 'og:url', property: 'og:url', content: BASE_URL },
+      { hid: 'og:image', property: 'og:image', content: OG_IMAGE_URL },
+      { hid: 'og:image:width', property: 'og:image:width', content: '256' },
+      { hid: 'og:image:height', property: 'og:image:height', content: '256' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+      { hid: 'twitter:site', name: 'twitter:site', content: TWITTER_ID }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -75,6 +96,6 @@ module.exports = {
   },
 
   router: {
-    base: process.env.BASE_DIR || '/'
+    base: BASE_DIR
   }
 }

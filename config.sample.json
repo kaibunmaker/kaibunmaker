@@ -1,0 +1,6 @@
+{
+  "BASE_DIR": "/",
+  "TWITTER_ID": "@munieru_jp",
+  "OG_IMAGE_PATH": "favicon-256x256.png",
+  "ORIGIN": "http://localhost:3000/"
+}
