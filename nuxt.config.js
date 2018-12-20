@@ -7,6 +7,7 @@ const BASE_DIR = config.BASE_DIR
 const BASE_URL = path.join(ORIGIN, BASE_DIR)
 const OG_IMAGE_PATH = config.OG_IMAGE_PATH
 const OG_IMAGE_URL = path.join(BASE_URL, OG_IMAGE_PATH)
+const TWITTER_ID = config.TWITTER_ID
 
 const i18n = require('./nuxt-i18n.config')
 const lang = require(`./${i18n.langDir}${i18n.defaultLocale}`)
@@ -31,7 +32,9 @@ module.exports = {
       { hid: 'og:url', property: 'og:url', content: BASE_URL },
       { hid: 'og:image', property: 'og:image', content: OG_IMAGE_URL },
       { hid: 'og:image:width', property: 'og:image:width', content: '256' },
-      { hid: 'og:image:height', property: 'og:image:height', content: '256' }
+      { hid: 'og:image:height', property: 'og:image:height', content: '256' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+      { hid: 'twitter:site', name: 'twitter:site', content: TWITTER_ID }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
