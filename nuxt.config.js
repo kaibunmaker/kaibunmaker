@@ -8,6 +8,7 @@ const BASE_URL = path.join(ORIGIN, BASE_DIR)
 const OG_IMAGE_PATH = config.OG_IMAGE_PATH
 const OG_IMAGE_URL = path.join(BASE_URL, OG_IMAGE_PATH)
 const TWITTER_ID = config.TWITTER_ID
+const GOOGLE_ANALYTICS_UA = config.GOOGLE_ANALYTICS_UA
 
 const i18n = require('./nuxt-i18n.config')
 const lang = require(`./${i18n.langDir}${i18n.defaultLocale}`)
@@ -69,7 +70,10 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    ['nuxt-i18n', i18n]
+    ['nuxt-i18n', i18n],
+    ['@nuxtjs/google-analytics', {
+      id: GOOGLE_ANALYTICS_UA
+    }]
   ],
 
   /*

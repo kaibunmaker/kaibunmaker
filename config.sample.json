@@ -1,5 +1,6 @@
 {
   "BASE_DIR": "/",
+  "GOOGLE_ANALYTICS_UA": "UA-100023168-4",
   "TWITTER_ID": "@munieru_jp",
   "OG_IMAGE_PATH": "favicon-256x256.png",
   "ORIGIN": "http://localhost:3000/"
