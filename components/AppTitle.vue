@@ -6,8 +6,8 @@
 
 <style lang="scss" scoped>
 $relative-max-width: 600px;
-$relative-font-size: 15vw;
-$absolute-font-size: 92px; //NOTE: $absolute-font-size >= (window.innerWidth == $relative-max-width のときの font-size)
+$relative-font-size: 14vw;
+$absolute-font-size: 84px; //NOTE: $absolute-font-size >= (window.innerWidth == $relative-max-width のときの font-size)
 
 .app-title {
   font-family: "Noto Serif JP", serif;
