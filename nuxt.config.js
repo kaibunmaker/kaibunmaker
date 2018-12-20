@@ -1,12 +1,11 @@
-const path = require('path')
 const Stylelint = require('stylelint-webpack-plugin')
 
 const config = require('./config')
 const ORIGIN = config.ORIGIN
 const BASE_DIR = config.BASE_DIR
-const BASE_URL = path.join(ORIGIN, BASE_DIR)
+const BASE_URL = new URL(BASE_DIR, ORIGIN)
 const OG_IMAGE_PATH = config.OG_IMAGE_PATH
-const OG_IMAGE_URL = path.join(BASE_URL, OG_IMAGE_PATH)
+const OG_IMAGE_URL = new URL(OG_IMAGE_PATH, BASE_URL)
 const TWITTER_ID = config.TWITTER_ID
 const GOOGLE_ANALYTICS_UA = config.GOOGLE_ANALYTICS_UA
 
