@@ -15,7 +15,8 @@
     "fix:js": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "fix:css": "stylelint --fix '**/*.{css,scss,vue}'",
     "fix": "npm-run-all fix:*",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "cross-env": "^5.2.0",
