@@ -106,7 +106,12 @@ module.exports = {
 
   manifest: {
     name: APP_NAME,
+    short_name: APP_NAME,
     description: APP_DESCRIPTION,
     lang: DEFAULT_LOCALE
+  },
+
+  meta: {
+    author: TWITTER_ID
   }
 }
