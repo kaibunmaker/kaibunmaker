@@ -9,6 +9,6 @@
   "FOOTER_HOSTING_SITE_LABEL": "GitHub",
   "INPUT": "入力",
   "REPEAT_LAST_CHARACTER": "最後の文字を繰り返す",
-  "SHARE_MESSAGE_TEMPLATE": "{{title}} {{{url}}} #回文",
+  "SHARE_MESSAGE_TEMPLATE": "{{title}} {{{url}}} #回文メーカー",
   "TWEET": "ツイート"
 }
