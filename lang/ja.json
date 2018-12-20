@@ -1,6 +1,6 @@
 {
   "APP_NAME": "回文メーカー",
-  "APP_DESCRIPTION": "回文を作成して共有できるサイト",
+  "APP_DESCRIPTION": "回文を作って共有できるサービス",
   "FOOTER_CREATOR": "Created by {creator}",
   "FOOTER_CREATOR_URL": "https://twitter.com/munieru_jp",
   "FOOTER_CREATOR_LABEL": "@munieru_jp",
