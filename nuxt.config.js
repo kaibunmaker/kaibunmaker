@@ -11,7 +11,8 @@ const TWITTER_ID = config.TWITTER_ID
 const GOOGLE_ANALYTICS_UA = config.GOOGLE_ANALYTICS_UA
 
 const i18n = require('./nuxt-i18n.config')
-const lang = require(`./${i18n.langDir}${i18n.defaultLocale}`)
+const DEFAULT_LOCALE = i18n.defaultLocale
+const lang = require(`./${i18n.langDir}${DEFAULT_LOCALE}`)
 const APP_NAME = lang.APP_NAME
 const APP_DESCRIPTION = lang.APP_DESCRIPTION
 
@@ -70,6 +71,7 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/pwa',
     ['nuxt-i18n', i18n],
     ['@nuxtjs/google-analytics', {
       id: GOOGLE_ANALYTICS_UA
@@ -101,5 +103,11 @@ module.exports = {
 
   router: {
     base: BASE_DIR
+  },
+
+  manifest: {
+    name: APP_NAME,
+    description: APP_DESCRIPTION,
+    lang: DEFAULT_LOCALE
   }
 }
