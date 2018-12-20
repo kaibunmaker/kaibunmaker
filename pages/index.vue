@@ -31,11 +31,16 @@ import AppRepeatSwitch from '~/components/AppRepeatSwitch'
 import AppTitle from '~/components/AppTitle'
 import AppTweetButton from '~/components/AppTweetButton'
 
+import config from '~/config'
+const ORIGIN = config.ORIGIN
+const BASE_DIR = config.BASE_DIR
+const BASE_URL = path.join(ORIGIN, BASE_DIR)
+
 export default {
   head () {
     return {
       link: [
-        { rel: 'canonical', href: this.baseUrl }
+        { rel: 'canonical', href: BASE_URL }
       ]
     }
   },
@@ -48,11 +53,8 @@ export default {
     AppTweetButton
   },
   computed: {
-    baseDir () {
-      return this.$router.history.base
-    },
-    baseUrl () {
-      return path.join(location.origin, this.baseDir)
+    appName () {
+      return this.$t('APP_NAME')
     },
     palindrome () {
       return Val.of(this.text)
@@ -61,14 +63,14 @@ export default {
         .or('')
     },
     shareTitle () {
-      return this.palindrome || document.title
+      return this.palindrome || this.appName
     },
     shareUrl () {
       return Val.of(this.palindrome)
         .filter(palindrome => palindrome !== '')
         .map(palindrome => encodeURIComponent(palindrome))
-        .map(palindrome => path.join(this.baseUrl, `?status=${palindrome}`))
-        .or(this.baseUrl)
+        .map(palindrome => path.join(BASE_URL, `?status=${palindrome}`))
+        .or(BASE_URL)
     },
     shareMessageTemplate () {
       return this.$t('SHARE_MESSAGE_TEMPLATE')
