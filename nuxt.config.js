@@ -1,3 +1,4 @@
+const URL = require('url').URL
 const Stylelint = require('stylelint-webpack-plugin')
 
 const config = loadConfig()
