@@ -1,6 +1,6 @@
 const Stylelint = require('stylelint-webpack-plugin')
 
-const config = require('./config')
+const config = loadConfig()
 const ORIGIN = config.ORIGIN
 const BASE_DIR = config.BASE_DIR
 const BASE_URL = new URL(BASE_DIR, ORIGIN).toString()
@@ -113,5 +113,26 @@ module.exports = {
 
   meta: {
     author: TWITTER_ID
+  }
+}
+
+function loadConfig () {
+  try {
+    return require('./config')
+  } catch (ignored) {
+    const {
+      BASE_DIR,
+      GOOGLE_ANALYTICS_UA,
+      TWITTER_ID,
+      OG_IMAGE_PATH,
+      ORIGIN
+    } = process.env
+    return {
+      BASE_DIR,
+      GOOGLE_ANALYTICS_UA,
+      TWITTER_ID,
+      OG_IMAGE_PATH,
+      ORIGIN
+    }
   }
 }
