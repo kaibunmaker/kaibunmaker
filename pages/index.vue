@@ -30,7 +30,7 @@ import AppRepeatSwitch from '~/components/AppRepeatSwitch'
 import AppTitle from '~/components/AppTitle'
 import AppTweetButton from '~/components/AppTweetButton'
 
-import config from '~/config'
+const config = process.env.config
 const ORIGIN = config.ORIGIN
 const BASE_DIR = config.BASE_DIR
 const BASE_URL = new URL(BASE_DIR, ORIGIN).toString()

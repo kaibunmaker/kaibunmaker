@@ -1,7 +1,8 @@
+const fs = require('fs')
 const { URL } = require('url')
 const Stylelint = require('stylelint-webpack-plugin')
 
-const config = require('./config')
+const config = loadConfig('./config.json')
 const ORIGIN = config.ORIGIN
 const BASE_DIR = config.BASE_DIR
 const BASE_URL = new URL(BASE_DIR, ORIGIN).toString()
@@ -114,5 +115,31 @@ module.exports = {
 
   meta: {
     author: TWITTER_ID
+  },
+
+  env: {
+    config
+  }
+}
+
+function loadConfig (filepath) {
+  try {
+    const data = fs.readFileSync(filepath, 'utf-8')
+    return JSON.parse(data)
+  } catch (ignored) {
+    const {
+      BASE_DIR,
+      GOOGLE_ANALYTICS_UA,
+      TWITTER_ID,
+      OG_IMAGE_PATH,
+      ORIGIN
+    } = process.env
+    return {
+      BASE_DIR,
+      GOOGLE_ANALYTICS_UA,
+      TWITTER_ID,
+      OG_IMAGE_PATH,
+      ORIGIN
+    }
   }
 }
