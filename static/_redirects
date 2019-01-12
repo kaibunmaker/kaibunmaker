@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://kaibunmaker.netlify.com/* http://kaibunmaker.com/:splat 301!
