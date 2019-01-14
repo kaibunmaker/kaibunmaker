@@ -3,13 +3,10 @@ const { URL } = require('url')
 const Stylelint = require('stylelint-webpack-plugin')
 
 const config = loadConfig('./config.json')
-const ORIGIN = config.ORIGIN
-const BASE_DIR = config.BASE_DIR
+const { BASE_DIR, GOOGLE_ANALYTICS_UA, TWITTER_ID, OG_IMAGE_PATH, ORIGIN } = config
 const BASE_URL = new URL(BASE_DIR, ORIGIN).toString()
-const OG_IMAGE_PATH = config.OG_IMAGE_PATH
 const OG_IMAGE_URL = new URL(OG_IMAGE_PATH, BASE_URL).toString()
-const TWITTER_ID = config.TWITTER_ID
-const GOOGLE_ANALYTICS_UA = config.GOOGLE_ANALYTICS_UA
+const TWITTER_ACCOUNT = `@${TWITTER_ID}`
 
 const i18n = require('./nuxt-i18n.config')
 const DEFAULT_LOCALE = i18n.defaultLocale
@@ -37,7 +34,7 @@ module.exports = {
       { hid: 'og:image:width', property: 'og:image:width', content: '256' },
       { hid: 'og:image:height', property: 'og:image:height', content: '256' },
       { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
-      { hid: 'twitter:site', name: 'twitter:site', content: TWITTER_ID }
+      { hid: 'twitter:site', name: 'twitter:site', content: TWITTER_ACCOUNT }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
