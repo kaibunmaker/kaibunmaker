@@ -36,4 +36,4 @@ $ cp config.sample.json config.json
 |`ORIGIN`|デプロイ先のオリジン|`http://localhost:3000/`|
 
 ## 関連リンク
-* [回文を作成して共有できるサービス「回文メーカー」をNuxt.js + Vuetify.jsで作った - Qiita](https://qiita.com/munieru_jp/items/0b9ab21af10cd41e98ba#%E3%82%84%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8)
+* [回文を作成して共有できるサービス「回文メーカー」をNuxt.js + Vuetify.jsで作った - Qiita](https://qiita.com/munieru_jp/items/0b9ab21af10cd41e98ba)
