@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e237d36c-3977-4bd5-b3c7-bc554cedc579/deploy-status)](https://app.netlify.com/sites/kaibunmaker/deploys)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 # 回文メーカー
