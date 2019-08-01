@@ -1,4 +1,4 @@
-import Val from '@munierujp/val'
+import Val from '@js-commons/val'
 import isPalindrome from '~/modules/isPalindrome'
 import parsePalindrome from '~/modules/parsePalindrome'
 
