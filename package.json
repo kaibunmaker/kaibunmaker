@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "@js-commons/val": "^1.2.0",
-    "@munierujp/val": "^1.0.0",
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/pwa": "^2.6.0",
     "babel-eslint": "^8.2.1",
