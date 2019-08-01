@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import Val from '@munierujp/val'
+import Val from '@js-commons/val'
 import createFormData from '~/modules/createFormData'
 import createPalindrome from '~/modules/createPalindrome'
 import createShareMessage from '~/modules/createShareMessage'

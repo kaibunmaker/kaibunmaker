@@ -23,7 +23,7 @@
     "vuetify": "^1.2.4"
   },
   "devDependencies": {
-    "@munierujp/val": "^1.0.0",
+    "@js-commons/val": "^1.2.0",
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/pwa": "^2.6.0",
     "babel-eslint": "^8.2.1",

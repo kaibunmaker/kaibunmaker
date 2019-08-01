@@ -1,4 +1,4 @@
-import Val from '@munierujp/val'
+import Val from '@js-commons/val'
 import isString from '~/modules/isString'
 import reverseString from '~/modules/reverseString'
 
