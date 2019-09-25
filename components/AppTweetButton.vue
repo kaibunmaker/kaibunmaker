@@ -1,6 +1,6 @@
 <template>
   <v-btn
-    color="blue"
+    color="#1da1f2"
     dark
     @click="open">
     <v-icon left>fab fa-twitter</v-icon>
