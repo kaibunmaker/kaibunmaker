@@ -25,6 +25,6 @@ export default {
 #app {
   background-color: #fafafa;
   color: #212121;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: Roboto, "Noto Sans JP", sans-serif;
 }
 </style>
