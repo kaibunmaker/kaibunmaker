@@ -1,6 +1,6 @@
 <template>
   <v-btn
-    color="blue"
+    :color="color"
     dark
     @click="open">
     <v-icon left>fab fa-twitter</v-icon>
@@ -11,6 +11,7 @@
 <script>
 const DIALOG_WIDTH = 550
 const DIALOG_HEIGHT = 420
+const URL_BASE = 'https://twitter.com/intent/tweet'
 
 export default {
   props: {
@@ -19,12 +20,15 @@ export default {
       default: ''
     }
   },
+  data: () => ({
+    color: '#1da1f2'
+  }),
   computed: {
     encodedMessage () {
       return encodeURIComponent(this.message)
     },
     url () {
-      return `https://twitter.com/intent/tweet?status=${this.encodedMessage}`
+      return this.encodedMessage ? `${URL_BASE}?status=${this.encodedMessage}` : URL_BASE
     }
   },
   methods: {
