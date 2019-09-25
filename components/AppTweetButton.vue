@@ -11,6 +11,7 @@
 <script>
 const DIALOG_WIDTH = 550
 const DIALOG_HEIGHT = 420
+const URL_BASE = 'https://twitter.com/intent/tweet'
 
 export default {
   props: {
@@ -27,7 +28,7 @@ export default {
       return encodeURIComponent(this.message)
     },
     url () {
-      return `https://twitter.com/intent/tweet?status=${this.encodedMessage}`
+      return this.encodedMessage ? `${URL_BASE}?status=${this.encodedMessage}` : URL_BASE
     }
   },
   methods: {
