@@ -1,6 +1,6 @@
 <template>
   <v-btn
-    color="#1da1f2"
+    :color="color"
     dark
     @click="open">
     <v-icon left>fab fa-twitter</v-icon>
@@ -19,6 +19,9 @@ export default {
       default: ''
     }
   },
+  data: () => ({
+    color: '#1da1f2'
+  }),
   computed: {
     encodedMessage () {
       return encodeURIComponent(this.message)
