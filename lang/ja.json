@@ -5,7 +5,7 @@
   "FOOTER_CREATOR_URL": "https://twitter.com/munieru_jp",
   "FOOTER_CREATOR_LABEL": "@munieru_jp",
   "FOOTER_HOSTING_SITE": "Hosted on {site}",
-  "FOOTER_HOSTING_SITE_URL": "https://github.com/munierujp/kaibunmaker",
+  "FOOTER_HOSTING_SITE_URL": "https://github.com/kaibunmaker/kaibunmaker",
   "FOOTER_HOSTING_SITE_LABEL": "GitHub",
   "INPUT": "入力",
   "REPEAT_LAST_CHARACTER": "最後の文字を繰り返す",
