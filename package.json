@@ -14,8 +14,7 @@
     "lint": "npm-run-all -p lint:*",
     "fix:js": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "fix:css": "stylelint --fix '**/*.{css,scss,vue}'",
-    "fix": "npm-run-all -p fix:*",
-    "precommit": "npm run lint"
+    "fix": "npm-run-all -p fix:*"
   },
   "dependencies": {
     "cross-env": "5.2.0",
