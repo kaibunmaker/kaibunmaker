@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import Val from '@js-commons/val'
 import createFormData from '~/modules/createFormData'
 import createPalindrome from '~/modules/createPalindrome'
 import createShareMessage from '~/modules/createShareMessage'
@@ -55,22 +54,34 @@ export default {
     appName () {
       return this.$t('APP_NAME')
     },
+    /**
+     * @returns {string}
+     */
     palindrome () {
-      return Val.of(this.text)
-        .filter(text => text !== '')
-        .map(text => createPalindrome(text, this.repeat))
-        .or('')
+      const text = this.text
+
+      if (typeof text !== 'string' || text === '') {
+        return ''
+      }
+
+      return createPalindrome(text, this.repeat)
     },
     shareTitle () {
       return this.palindrome || this.appName
     },
+    /**
+     * @returns {string}
+     */
     shareUrl () {
-      return Val.of(this.palindrome)
-        .filter(palindrome => palindrome !== '')
-        .map(palindrome => encodeURIComponent(palindrome))
-        .map(palindrome => new URL(`?status=${palindrome}`, BASE_URL))
-        .map(url => url.toString())
-        .or(BASE_URL)
+      const palindrome = this.palindrome
+
+      if (typeof palindrome !== 'string' || palindrome === '') {
+        return BASE_URL
+      }
+
+      const encodedPalindrome = encodeURIComponent(palindrome)
+      const url = new URL(`?status=${encodedPalindrome}`, BASE_URL)
+      return url.toString()
     },
     shareMessageTemplate () {
       return this.$t('SHARE_MESSAGE_TEMPLATE')
