@@ -1,6 +1,5 @@
 const fs = require('fs')
 const { URL } = require('url')
-const Stylelint = require('stylelint-webpack-plugin')
 
 const config = loadConfig('./config.json')
 const { BASE_DIR, GOOGLE_ANALYTICS_UA, TWITTER_ID, OG_IMAGE_PATH, ORIGIN } = config
@@ -83,20 +82,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {
-      // Run ESLint & stylelint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-        config.plugins.push(new Stylelint({
-          files: '**/*.{css,scss,vue}'
-        }))
-      }
-    }
+    extend (config, ctx) {}
   },
 
   router: {
