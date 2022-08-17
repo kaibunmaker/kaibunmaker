@@ -4,11 +4,11 @@ import isPalindrome from './isPalindrome'
 import parsePalindrome from './parsePalindrome'
 
 /**
- * @param {unknown} value
+ * @param {string} value
  * @returns {{ text: string, repeat: boolean }}
  */
 export default function (value) {
-  if (typeof value !== 'string' || !isPalindrome(value)) {
+  if (!isPalindrome(value)) {
     return {
       text: '',
       repeat: false
