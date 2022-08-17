@@ -28,7 +28,7 @@ export default {
       return encodeURIComponent(this.message)
     },
     url () {
-      return this.encodedMessage ? `${URL_BASE}?status=${this.encodedMessage}` : URL_BASE
+      return this.encodedMessage ? `${URL_BASE}?text=${this.encodedMessage}` : URL_BASE
     }
   },
   methods: {
