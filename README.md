@@ -3,7 +3,7 @@
 # 回文メーカー
 回文を作成して共有できるサービス
 
-<img src=".doc/iphone.png" width="300">
+<img src="meta/iphone.png" width="300">
 
 ## 開発
 ### 初期設定
