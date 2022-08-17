@@ -1,17 +1,12 @@
 // @ts-check
 
-// @ts-ignore
-import reverseString from '~/modules/reverseString'
+import reverseString from './reverseString'
 
 /**
- * @param {unknown} value
+ * @param {string} value
  * @returns {boolean}
  */
 export default function (value) {
-  if (typeof value !== 'string') {
-    return false
-  }
-
   if (value === '') {
     return false
   }

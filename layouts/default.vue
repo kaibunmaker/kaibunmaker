@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import AppFooter from '~/components/AppFooter'
+import AppFooter from '../components/AppFooter'
 
 export default {
   components: {

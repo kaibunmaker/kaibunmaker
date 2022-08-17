@@ -19,15 +19,15 @@
 </template>
 
 <script>
-import createFormData from '~/modules/createFormData'
-import createPalindrome from '~/modules/createPalindrome'
-import createShareMessage from '~/modules/createShareMessage'
-import AppFooter from '~/components/AppFooter'
-import AppInput from '~/components/AppInput'
-import AppOutput from '~/components/AppOutput'
-import AppRepeatSwitch from '~/components/AppRepeatSwitch'
-import AppTitle from '~/components/AppTitle'
-import AppTweetButton from '~/components/AppTweetButton'
+import createFormData from '../modules/createFormData'
+import createPalindrome from '../modules/createPalindrome'
+import createShareMessage from '../modules/createShareMessage'
+import AppFooter from '../components/AppFooter'
+import AppInput from '../components/AppInput'
+import AppOutput from '../components/AppOutput'
+import AppRepeatSwitch from '../components/AppRepeatSwitch'
+import AppTitle from '../components/AppTitle'
+import AppTweetButton from '../components/AppTweetButton'
 
 const config = process.env.config
 const ORIGIN = config.ORIGIN

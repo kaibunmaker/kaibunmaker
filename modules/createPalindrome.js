@@ -1,7 +1,6 @@
 // @ts-check
 
-// @ts-ignore
-import reverseString from '~/modules/reverseString'
+import reverseString from './reverseString'
 
 /**
  * @param {string} text
