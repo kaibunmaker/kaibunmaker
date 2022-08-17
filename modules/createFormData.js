@@ -1,13 +1,21 @@
-import Val from '@js-commons/val'
+// @ts-check
+
+// @ts-ignore
 import isPalindrome from '~/modules/isPalindrome'
+// @ts-ignore
 import parsePalindrome from '~/modules/parsePalindrome'
 
+/**
+ * @param {unknown} value
+ * @returns {{ text: string, repeat: boolean }}
+ */
 export default function (value) {
-  return Val.of(value)
-    .filter(value => isPalindrome(value))
-    .map(palindrome => parsePalindrome(palindrome))
-    .or({
+  if (!isPalindrome(value)) {
+    return {
       text: '',
       repeat: false
-    })
+    }
+  }
+
+  return parsePalindrome(value)
 }
