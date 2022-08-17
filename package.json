@@ -8,11 +8,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint:css": "stylelint '**/*.{css,scss,vue}'",
-    "lint": "npm-run-all -p lint:*",
-    "fix:css": "stylelint --fix '**/*.{css,scss,vue}'",
-    "fix": "npm-run-all -p fix:*"
+    "generate": "nuxt generate"
   },
   "dependencies": {
     "@babel/preset-env": "^7.12.17",
@@ -31,10 +27,6 @@
     "nuxt-i18n": "5.4.4",
     "push-dir": "0.4.1",
     "sass-loader": "13.0.2",
-    "stylelint": "13.3.1",
-    "stylelint-config-standard": "18.2.0",
-    "stylelint-scss": "3.4.0",
-    "stylelint-webpack-plugin": "0.10.5",
     "stylus": "0.54.5",
     "stylus-loader": "3.0.2"
   }
