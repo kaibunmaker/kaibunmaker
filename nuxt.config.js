@@ -84,14 +84,8 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-      // Run ESLint & stylelint on save
+      // Run stylelint on save
       if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
         config.plugins.push(new Stylelint({
           files: '**/*.{css,scss,vue}'
         }))
