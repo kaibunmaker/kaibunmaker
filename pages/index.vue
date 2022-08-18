@@ -28,12 +28,6 @@ import createPalindrome from '~/modules/createPalindrome'
 // @ts-ignore
 import createShareMessage from '~/modules/createShareMessage'
 // @ts-ignore
-import createFormData from '~/modules/createFormData'
-// @ts-ignore
-import createPalindrome from '~/modules/createPalindrome'
-// @ts-ignore
-import createShareMessage from '~/modules/createShareMessage'
-// @ts-ignore
 import AppFooter from '~/components/AppFooter'
 // @ts-ignore
 import AppInput from '~/components/AppInput'
