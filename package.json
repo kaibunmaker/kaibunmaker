@@ -22,7 +22,7 @@
     "mustache": "3.2.1",
     "node-sass": "7.0.1",
     "nodemon": "1.19.4",
-    "nuxt-i18n": "5.4.4",
+    "nuxt-i18n": "5.12.7",
     "sass-loader": "10.3.1",
     "stylus": "0.54.8",
     "stylus-loader": "3.0.2"
