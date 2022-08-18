@@ -21,21 +21,30 @@
 <script>
 // @ts-check
 
-import createFormData from '../modules/createFormData'
-import createPalindrome from '../modules/createPalindrome'
-import createShareMessage from '../modules/createShareMessage'
 // @ts-ignore
-import AppFooter from '../components/AppFooter'
+import createFormData from '~/modules/createFormData'
 // @ts-ignore
-import AppInput from '../components/AppInput'
+import createPalindrome from '~/modules/createPalindrome'
 // @ts-ignore
-import AppOutput from '../components/AppOutput'
+import createShareMessage from '~/modules/createShareMessage'
 // @ts-ignore
-import AppRepeatSwitch from '../components/AppRepeatSwitch'
+import createFormData from '~/modules/createFormData'
 // @ts-ignore
-import AppTitle from '../components/AppTitle'
+import createPalindrome from '~/modules/createPalindrome'
 // @ts-ignore
-import AppTweetButton from '../components/AppTweetButton'
+import createShareMessage from '~/modules/createShareMessage'
+// @ts-ignore
+import AppFooter from '~/components/AppFooter'
+// @ts-ignore
+import AppInput from '~/components/AppInput'
+// @ts-ignore
+import AppOutput from '~/components/AppOutput'
+// @ts-ignore
+import AppRepeatSwitch from '~/components/AppRepeatSwitch'
+// @ts-ignore
+import AppTitle from '~/components/AppTitle'
+// @ts-ignore
+import AppTweetButton from '~/components/AppTweetButton'
 
 /** @type {Record<string, unknown>} */
 // @ts-ignore

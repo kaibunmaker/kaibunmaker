@@ -1,7 +1,9 @@
 // @ts-check
 
-import isPalindrome from './isPalindrome'
-import parsePalindrome from './parsePalindrome'
+// @ts-ignore
+import isPalindrome from '~/modules/isPalindrome'
+// @ts-ignore
+import parsePalindrome from '~/modules/parsePalindrome'
 
 /**
  * @param {string} value
