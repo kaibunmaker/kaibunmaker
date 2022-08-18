@@ -18,7 +18,7 @@
   "devDependencies": {
     "@nuxtjs/google-analytics": "2.4.0",
     "@nuxtjs/pwa": "3.3.5",
-    "mustache": "3.2.1",
+    "mustache": "4.2.0",
     "node-sass": "7.0.1",
     "nodemon": "1.19.4",
     "nuxt-i18n": "5.12.7",
