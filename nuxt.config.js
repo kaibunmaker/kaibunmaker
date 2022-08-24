@@ -1,4 +1,5 @@
 const fs = require('fs')
+const sass = require('sass')
 const { URL } = require('url')
 
 const config = loadConfig('./config.json')
@@ -82,7 +83,12 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    extend (config, ctx) {}
+    extend (config, ctx) {},
+    loaders: {
+      scss: {
+        implementation: sass
+      }
+    }
   },
 
   router: {
