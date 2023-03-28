@@ -31,7 +31,24 @@ const config = {
         }
       }
     }
-  }
+  },
+  nodeRules: [
+    {
+      selector: 'v-text-field',
+      rules: {
+        'invalid-attr': {
+          options: {
+            attrs: {
+              // https://v15.vuetifyjs.com/en/components/text-fields
+              'autofocus': {
+                type: 'Boolean'
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
 }
 
 module.exports = config
