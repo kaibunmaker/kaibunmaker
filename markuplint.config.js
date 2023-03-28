@@ -19,7 +19,19 @@ const config = {
   excludeFiles: [
     './dist/**/*',
     './node_modules/**/*'
-  ]
+  ],
+  rules: {
+    'invalid-attr': {
+      options: {
+        attrs: {
+          // https://kazupon.github.io/vue-i18n/api/#place
+          place: {
+            type: 'Any'
+          }
+        }
+      }
+    }
+  }
 }
 
 module.exports = config
