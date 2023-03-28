@@ -5,10 +5,12 @@
   "author": "Munieru",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "lint": "npm-run-all -p lint:*",
+    "lint:html": "markuplint \"**/*.{html,vue}\"",
+    "start": "nuxt start"
   },
   "dependencies": {
     "cross-env": "7.0.3",
@@ -16,10 +18,14 @@
     "vuetify": "1.5.24"
   },
   "devDependencies": {
+    "@markuplint/vue-parser": "3.5.0",
+    "@markuplint/vue-spec": "3.5.0",
     "@nuxtjs/google-analytics": "2.4.0",
     "@nuxtjs/pwa": "3.3.5",
+    "markuplint": "3.5.0",
     "mustache": "4.2.0",
     "nodemon": "2.0.21",
+    "npm-run-all2": "6.0.4",
     "nuxt-i18n": "6.28.1",
     "sass": "1.55.0",
     "sass-loader": "10.3.1",
