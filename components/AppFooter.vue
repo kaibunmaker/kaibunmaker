@@ -10,6 +10,7 @@
         <a
           :href="$t('FOOTER_CREATOR_URL')"
           target="_blank"
+          rel="noopener noreferrer"
           place="creator">{{ $t('FOOTER_CREATOR_LABEL') }}</a>
       </i18n>
       <span>-</span>
@@ -19,6 +20,7 @@
         <a
           :href="$t('FOOTER_HOSTING_SITE_URL')"
           target="_blank"
+          rel="noopener noreferrer"
           place="site">{{ $t('FOOTER_HOSTING_SITE_LABEL') }}</a>
       </i18n>
     </div>
