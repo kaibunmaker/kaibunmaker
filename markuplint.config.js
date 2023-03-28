@@ -15,7 +15,10 @@ const config = {
   },
   specs: {
     '\\.vue$': '@markuplint/vue-spec'
-  }
+  },
+  excludeFiles: [
+    './node_modules/**/*'
+  ]
 }
 
 module.exports = config
