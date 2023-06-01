@@ -24,7 +24,7 @@
     "@nuxtjs/pwa": "3.3.5",
     "markuplint": "3.5.0",
     "mustache": "4.2.0",
-    "nodemon": "2.0.21",
+    "nodemon": "2.0.22",
     "npm-run-all2": "6.0.4",
     "nuxt-i18n": "6.28.1",
     "sass": "1.60.0",
