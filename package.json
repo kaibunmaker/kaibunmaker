@@ -22,7 +22,7 @@
     "@markuplint/vue-spec": "3.9.0",
     "@nuxtjs/google-analytics": "2.4.0",
     "@nuxtjs/pwa": "3.3.5",
-    "markuplint": "3.5.0",
+    "markuplint": "3.11.0",
     "mustache": "4.2.0",
     "nodemon": "2.0.22",
     "npm-run-all2": "6.0.5",
