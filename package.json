@@ -30,6 +30,6 @@
     "sass": "1.69.7",
     "sass-loader": "10.5.2",
     "stylus": "0.62.0",
-    "stylus-loader": "5.0.0"
+    "stylus-loader": "4.3.3"
   }
 }
