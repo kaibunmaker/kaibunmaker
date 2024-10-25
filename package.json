@@ -14,8 +14,8 @@
   },
   "dependencies": {
     "cross-env": "7.0.3",
-    "nuxt": "2.17.3",
-    "vuetify": "1.5.24"
+    "nuxt": "3.13.2",
+    "vuetify": "3.7.3"
   },
   "devDependencies": {
     "@markuplint/vue-parser": "3.12.0",
